@@ -1,0 +1,10 @@
+def cabecas(n):
+
+    Tp = (3 * n) + 1
+    c = (Tp - 2 * n) / 2
+    p = (n - c)
+    return print(f"O total de patos é {p} e o total de coelhos é {c}")
+
+y = (int(input("Insira o numero de cabeças: ")))
+
+print(cabecas(y))
