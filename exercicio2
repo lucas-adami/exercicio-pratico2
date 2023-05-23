@@ -1,0 +1,43 @@
+def numPrimo(n):
+    i = 1
+    contador = 0
+    while i <= n:
+        if (n % i)==0:
+            contador += 1
+        i += 1
+    if contador == 2:
+        return True
+    else:
+        return False
+
+x = int(input("Digite um número: "))
+if numPrimo(x):
+    print("O Numero é primo!")
+else:
+    print("O Numero não é primo!")
+...
+
+def primosQnt(n):
+    i, x = 1, 0
+    primos = []
+    while True:
+        i = i+1
+        if numPrimo(i):
+            x = x + 1
+            primos.append(i)
+        if x == n:
+            break
+    return primos
+
+y = int(input("digite a quantidade de numeros primos: "))
+print(primosQnt(y))
+...
+
+def primoSoma(n):
+    Soma = 0
+    for i in primosQnt(n):
+        Soma = Soma + i
+    return Soma
+
+y = int(input("insira uma quantidade de numeros primos: "))
+print(primoSoma(y))
