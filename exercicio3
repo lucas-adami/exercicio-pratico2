@@ -1,0 +1,10 @@
+from math import prod
+valorRA = input("Insira o valor do RA: ")
+ls_valorRA = list(valorRA)
+lista_RA = []
+
+for i in ls_valorRA:
+    lista_RA += [int(i)]
+
+print(f"Soma dos valores = {sum(lista_RA)}")
+print(f"O produto dos valores = {prod(lista_RA)}")
